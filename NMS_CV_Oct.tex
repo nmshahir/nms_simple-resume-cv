@@ -1,0 +1,570 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Nur M Shahir, PhD}
+\newcommand{\CVTitle}{Nur Shahir's CV}
+%\newcommand{\CVNote}{CV compiled on {\today} for Acme Corporation}
+\newcommand{\CVWebpage}{http://nmshahir.com}
+%\newcommand{\CVGithub}{https://github.com/nmshahir}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+{Ellicott City, MD, USA}
+\par
+\href{mailto:nmshahir@proton.me}
+{nmshahir@proton.me}
+\,\SubBulletSymbol\,
++1\,(443)\,745-4467
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+% DOCTORATE
+\Entry
+\href{http://www.unc.edu/}
+{\textbf{University of North Carolina at Chapel Hill}},
+Chapel Hill, NC, USA
+
+\Gap
+\BulletItem
+Ph.D. in
+\href{https://bcb.unc.edu/}
+{Bioinformatics and Computational Biology}
+\hfill
+\DatestampYM{2014}{8} --
+\DatestampYM{2020}{5}
+\begin{Detail}
+\SubBulletItem
+Dissertation:
+\href{https://cdr.lib.unc.edu/concern/dissertations/z029pb27b}
+{Inflammatory Bowel Disease Differentially Affects Region Specific\newline Composition and Aerotolerance Profiles of Mucosally-Adherent Bacteria}
+\SubBulletItem
+Adviser:
+Dr.~Terrence S.~Furey, Dr.~Shezad Z.~Sheikh
+\SubBulletItem
+Committe:
+Dr.~Michael I.~Love, Dr.~Ian~Carroll, Dr.~Yufeng~Liu
+
+\SubBulletItem
+Focus:
+Inflammatory Bowel Disease, gut microbiota, bioinformatics, 16S amplicon sequencing.
+\end{Detail}
+
+
+% MASTERS 
+\BigGap
+\Entry
+\href{https://umbc.edu/}
+{\textbf{University of Maryland, Baltimore County}},
+Baltimore, Maryland, USA
+
+\Gap
+\BulletItem
+M.S. in
+\href{https://mathstat.umbc.edu/}
+{Statistics}
+\hfill
+\DatestampYM{2011}{8} --
+\DatestampYM{2013}{12}
+\begin{Detail}
+\SubBulletItem
+Track: Biostatistics
+\SubBulletItem
+Thesis: Longitudinal Analysis of Urea Cycle Disorder Patients
+\SubBulletItem
+Adviser: Dr.~DoHwan~Park
+\end{Detail}
+
+% UNDERGRAD
+\BigGap
+\Entry
+\href{https://web.mit.edu/}
+{\textbf{Massachusetts Institute of Technology}},
+Springfield, Pennsylvania, USA
+
+\Gap
+\BulletItem
+B.S. in
+\href{https://math.mit.edu/}
+{Mathematics}
+\hfill
+\DatestampY{2006} --
+\DatestampY{2010}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INDUSTRY EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Relevant Industry\newline
+Experience}
+{Relevant Industry Experience}
+{PDF:RelevantIndustryExperience}
+
+\Entry
+\href{https://www.boozallen.com/}
+{\textbf{Booz Allen Hamilton}}
+Remote
+
+\Gap
+\BulletItem
+Lead Scientist
+\hfill
+\DatestampYM{2022}{8} --
+\DatestampYM{2024}{10}
+\begin{Detail}
+\SubBulletItem
+Served as a federal contractor bioinformatician, contributing to public health genomic surveillance, pathogen genomics, and large-scale human genomics projects across CDC and NIH.
+\SubBulletItem
+Redesigned and optimized public health genomics workflows to align with Nextflow nf-core standards, implementing rigorous pipeline validation and automated unit testing. Streamlined collaboration through Git, ensured reproducibility via Docker containerization, and enhanced project delivery efficiency by integrating Agile tracking in JIRA.
+\SubBulletItem
+Engineered reproducible bioinformatics pipelines with Snakemake on high-performance computing \text(HPC\text) clusters, enabling robust rare variant detection and uncovering genetic associations with ulcer development in sickle cell disease.
+\SubBulletItem
+Designed and implemented bioinformatics pipelines in R and Python on Google Cloud Platform (GCP) via the NIH All of Us Researcher Workbench, spanning genomic data ingestion, QC, and advanced downstream analysis. Delivered cloud-native, production-ready workflows that accelerated large-scale genomic insights for precision medicine applications.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href{http://www.example.com/my-institute}
+{\textbf{Davenport Lab}},
+Pennsylvania State University
+
+\Gap
+\BulletItem
+Postdoctoral Fellow
+\hfill
+\DatestampYM{2020}{6} --
+\DatestampYM{2022}{7}
+\begin{Detail}
+\SubBulletItem
+Piloted a benchmarking study on computational approaches to identify viral transcripts from bulk and single-cell RNA sequencing data, assessing the accuracy and precision of transcript identification.
+\SubBulletItem
+Designed bioinformatics workflows in snakemake for efficient data processing on HPC computing environments, employing tools including samtools, bwa, bowtie2, Kraken2, and STAR, and utilizing R for downstream analysis and visualization.
+\SubBulletItem
+Mentored undergraduate students, enhancing their research skills and academic performance.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{http://www.example.com/my-institute}
+{\textbf{Furey Lab}},
+University of North Carolina at Chapel Hill
+
+\Gap
+\BulletItem
+Graduate Research Assistant
+\hfill
+\DatestampYM{2014}{11} --
+\DatestampYM{2020}{5}
+\begin{Detail}
+\SubBulletItem
+Identified key microbial associations using R for data analysis and visualization of 16S rRNA amplicon data from IBD patients and controls.
+\SubBulletItem
+Developed a consensus analysis method in R with DEseq2 and Lefse, significantly enhancing the understanding of microbial dysbiosis in IBD.
+\SubBulletItem
+Presented research findings at various conferences, including the American Society of Human Genetics, to engage the scientific community.
+\SubBulletItem
+Authored a peer-reviewed journal article, contributing to the advancement of knowledge in the field of microbial dysbiosis.
+\end{Detail}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\Entry
+\href{https://pubmed.ncbi.nlm.nih.gov/32469069/}
+{\underline{Shahir,~NM}, et.al,
+``Crohn's Disease Differentially Affects Region-Specific Composition and Aerotolerance Profiles of Mucosally Adherent Bacteria.``
+\textit{ Inflammatory bowel diseases},
+vol.~26,
+no.~12,
+pp.~1843--1855,
+\DatestampY{2020}.}
+
+
+\Section
+{Presentations}
+{Presentations}
+{PDF:Presentations}
+\BigGap
+\SubSection
+{External Talks}
+{External Talks}
+{PDF:ExternalTalks}
+
+\BulletItem
+\textit{Crohn’s Disease Differentially Affects Intestinal Region Composition and Aerotolerance
+Profiles of Mucosally-Adherent Bacteria},
+Remote
+\hfill
+\DatestampYM{2020}{5} 
+\begin{Detail}
+\Item
+Virtual Microbiome Summit
+\end{Detail}
+
+\BulletItem
+\textit{IBD differentially affects region specific composition and aerotolerance profiles of
+mucosal-adherent bacteria},
+Remote
+\hfill
+\DatestampYM{2020}{5} 
+\begin{Detail}
+\Item
+MIT and UNC Joint Virtual Microbiome Seminar Series
+\end{Detail}
+
+\BigGap
+\SubSection
+{University of North Carolina at Chapel Hill}
+{University of North Carolina at Chapel Hill}
+{PDF:UNCTalks}
+
+\BulletItem
+\textit{Crohn’s Disease and the Intestinal Microbiota},
+Chapel Hill, NC
+\hfill
+\DatestampYM{2016}{12} 
+\begin{Detail}
+\Item
+Genetics Research Colloquium
+\end{Detail}
+
+\BulletItem
+\textit{Alterations in the Mucosal-Adherent Enteric Microbiota Between CD and nonIBD},
+Chapel Hill, NC
+\hfill
+\DatestampYM{2016}{10} 
+\begin{Detail}
+\Item
+Translations Medicine Closed Door Talks
+\end{Detail}
+
+\BulletItem
+\textit{A distinct microbiota signature characterizes patients with penetrating Crohn’s disease},
+Chapel Hill, NC
+\hfill
+\DatestampYM{2015}{10} 
+\begin{Detail}
+\Item
+Center for Gastrointestinal Biology and Disease
+\end{Detail}
+
+\BulletItem
+\textit{Analysis of the Composition and Diversity of the Colonic Mucosa Microbiota in Crohn’s
+Disease},
+Chapel Hill, NC
+\hfill
+\DatestampYM{2015}{5} 
+\begin{Detail}
+\Item
+Bioinformatics and Computational Biology Curriculum New Student Talks
+\end{Detail}
+
+\BulletItem
+\textit{Identification of SERPINA1 Splice Variants from Next-Gen Sequencing Data},
+Chapel Hill, NC
+\hfill
+\DatestampYM{2014}{10} 
+\begin{Detail}
+\Item
+Bioinformatics and Computational Biology Research in Progress Talks
+\end{Detail}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Honors \&\newline
+Awards}
+{Honors \& Awards}
+{PDF:HonorsAndAwards}
+
+\BulletItem
+\textbf{NIH T32 Training Fellow}
+\hfill
+\DatestampY{2015}
+\begin{Detail}
+\Item
+Bioinformatics and Computational Biology Predoctoral Training Grant
+\end{Detail}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Professional Affiliations\newline
+\& Activities}
+{Professional Affiliations \& Activities}
+{PDF:ProfessionalAffiliationsActivities}
+
+\Entry
+\href{http://www.example.com/my-society}
+{\textbf{Joint Society of Earth Scientists and Global Think Tank on Climate Resiliency}},
+\newline
+North Attleborough, Massachusetts, USA
+
+\Gap
+\BulletItem
+Member
+\hfill
+\DatestampY{2009} --
+Present
+
+% Manual page break.
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Campus Activities}
+{Campus Activities}
+{PDF:CampusActivities}
+
+\Entry
+\href{http://www.example.com/my-club}
+{\textbf{First Volunteers Club}},
+First American University
+
+\Gap
+\BulletItem
+President
+\hfill
+\DatestampYMD{2006}{08}{15} --
+\DatestampYMD{2007}{08}{15}
+\begin{Detail}
+\SubBulletItem
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+\SubBulletItem
+Curabitur vitae laoreet velit, vel ultricies est. Nam nec elit ac ante facilisis ultrices.
+\SubSubBulletItem
+Wel turpis efficitur, non lacinia orci maximus.
+\SubSubBulletItem
+Proin rhoncus, felis vel hendrerit lacinia.
+\SubBulletItem
+Integer sit amet turpis dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at orci eu leo vulputate finibus sed et sem.
+\SubBulletItem
+Suspendisse volutpat sapien et mi cursus, gravida ornare mauris sollicitudin.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Other Work\newline
+Experience}
+{Other Work Experience}
+{PDF:OtherWorkExperience}
+
+\Entry
+\href{http://www.example.com/my-company}
+{\textbf{Alpha Engineering Firm}},
+Oakland, Ohio, USA
+
+\Gap
+\BulletItem
+Project Officer,
+Department of Meteorological Sciences,
+\hfill
+\DatestampYMD{2007}{10}{15} --
+\DatestampYMD{2008}{01}{15}
+\newline
+Research \& Development Division
+\begin{Detail}
+\SubBulletItem
+Nullam venenatis egestas nisl eget elementum.
+\SubBulletItem
+Nulla finibus justo vel turpis efficitur, non lacinia orci maximus. Proin rhoncus, felis vel hendrerit lacinia, enim ipsum ultricies massa, sit amet interdum nisi massa sit amet justo.
+\SubBulletItem
+Etiam vitae eros mollis, consectetur quam quis, molestie massa.
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+English: Native language.
+
+\Gap
+\BulletItem
+Spanish: Fluent (speaking, reading, writing).
+
+\Gap
+\BulletItem
+Latin: Intermediate (reading); basic (speaking, writing).
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+{\TeX}, {\LaTeX}, {\XeLaTeX},
+MATLAB,
+Mathematica,
+Maple,
+R,
+Tableau,
+Adobe Photoshop,
+Adobe Illustrator,
+Microsoft Word,
+Microsoft Excel,
+Microsoft PowerPoint.
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Digital photography,
+typography,
+swimming.
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+\BulletItem
+\textbf{Professor Jonathan Public}
+\newline
+Professor of Geology and Mechanical Engineering
+\newline
+First American University
+\newline
+1000 First Avenue, Springfield, Massachusetts 22222, USA
+\newline
+\href{mailto:jonathanpublic@example.com}
+{jonathanpublic@example.com}
+\,\SubBulletSymbol\,
++1\,(555)\,222-2222
+
+\BigGap
+\BulletItem
+\textbf{Dr Alice Bob Carol}
+\newline
+Director, Research \& Development
+\newline
+Alpha Engineering Firm
+\newline
+20 North Street, Oakland, Ohio 33333, USA
+\newline
+\href{mailto:alicebobcarol@example.com}
+{alicebobcarol@example.com}
+\,\SubBulletSymbol\,
++1\,(555)\,333-3333
+
+\end{Body}
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+
+\end{document}
